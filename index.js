@@ -41,7 +41,7 @@ function startApp() {
             }
         })
     } 
-}
+
 
 // Object Oriented Programming Functions
 // Function to add a manager
@@ -148,3 +148,14 @@ function addIntern() {
         createTeam();
     });
 }
+
+function htmlBuild () {
+    console.log("Team successfully created!");
+
+    fs.writeFileSync(outputPath, generateTeam(teamArray), "utf-8");
+}
+
+createTeam();
+}
+
+startApp();
