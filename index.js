@@ -22,12 +22,15 @@ function startApp() {
         .then(function (userInput) {
             // Will switch to invoke a function depending on user input
             switch(userInput.addEmployee) {
+                // if user selected 'Manager'
                 case "Manager":
                     addManager();
                     break;
+                // if user selected 'Engineer'
                 case "Engineer":
                     addEngineer();
                     break;
+                // if user selected 'Intern'
                 case "Intern":
                     addIntern();
                     break;
@@ -106,6 +109,41 @@ function addEngineer() {
     .then(answers => {
         const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
         teamArray.push(engineer);
+        createTeam();
+    });
+}
+
+// Function to add Intern
+function addIntern() {
+    // Prompts to collect data for intern
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "internName",
+            message: "Enter intern's name."
+        },
+
+        {
+            type: "input",
+            name: "internId",
+            message: "Enter intern's employee ID number."
+        },
+
+        {
+            type: "input",
+            name: "internEmail",
+            message: "Enter intern's email."
+        },
+
+        {
+            type: "input",
+            name: "internSchool",
+            message: "Enter the school attended by intern."
+        },
+    ])
+    .then(answers => {
+        const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
+        teamArray.push(intern);
         createTeam();
     });
 }
