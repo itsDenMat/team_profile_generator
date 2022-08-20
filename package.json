@@ -1,0 +1,19 @@
+{
+  "name": "team_profile_generator",
+  "version": "1.0.0",
+  "description": "Command line application that generates an HTML webpage to display summaries for each employees.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsDenMat/team_profile_generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsDenMat/team_profile_generator/issues"
+  },
+  "homepage": "https://github.com/itsDenMat/team_profile_generator#readme"
+}
