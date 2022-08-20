@@ -42,34 +42,70 @@ function startApp() {
 // Object Oriented Programming Functions
 // Function to add a manager
 function addManager() {
+    // Prompts to collect data for manager
     inquirer.prompt ([
         {
             type: "input",
             name: "managerName",
-            message: "What is the manager's name?"
+            message: "Enter manager's name."
         },
 
         {
             type: "input",
             name: "managerId",
-            message: "What is the manager's employee ID number?"
+            message: "Enter manager's employee ID number."
         },
 
         {
             type: "input",
             name: "managerEmail",
-            message: "What is the manager's email?"
+            message: "Enter manager's email."
         },
 
         {
             type: "input",
             name: "managerOfficeNumber",
-            message: "What is the manager's office number?"
+            message: "Enter manager's office number."
         }
     ])
     .then(answers => {
         const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
         teamArray.push(manager);
         createTeam();
-    })
+    });
+}
+
+// Function to add Engineer
+function addEngineer() {
+    // Prompts to collect data for engineer
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "engineerName",
+            message: "Enter engineer's name."
+        },
+
+        {
+            type: "input",
+            name: "engineerId",
+            message: "Enter engineer's employee ID number."
+        },
+
+        {
+            type: "input",
+            name: "engineerEmail",
+            message: "Enter engineer's email."
+        },
+
+        {
+            type: "input",
+            name: "engineerGithub",
+            message: "Enter engineer's GitHub username."
+        },
+    ])
+    .then(answers => {
+        const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
+        teamArray.push(engineer);
+        createTeam();
+    });
 }
