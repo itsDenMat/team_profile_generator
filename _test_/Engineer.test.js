@@ -1,6 +1,4 @@
 // Import Engineer.js
-const { default: test } = require("node:test");
-const { hasUncaughtExceptionCaptureCallback } = require("process");
 const Engineer = require("../lib/Engineer");
 
 // TEST FOR ENGINEER
@@ -16,7 +14,7 @@ test("Can a GitHub link.", () =>{
 test("Can it retrieve GitHub through getGithub method.", () => {
     const testGitHub = "JimmyGit";
     const employeeTest = new Engineer("Jimmy", 3, "jimmy@gmail.com", "JimmyGit");
-    expect(employeeTest.getRole()).toBe(returnValue);
+    expect(employeeTest.getGithub()).toBe(testGitHub);
 });
 
 // getRole() test
