@@ -34,12 +34,12 @@ test("Can retrieve name through getName method.", () => {
 
 test("Can retrieve ID through getID method", () => {
     const testID = 3;
-    const employeeTest = new Employee(testID);
+    const employeeTest = new Employee("Jimmy", testID);
     expect(employeeTest.getId()).toBe(testID);
 })
 
 test("Can retrieve email through getEmail method.", () => {
-    const testEmail = jimmy@gmail.com;
+    const testEmail = "jimmy@gmail.com";
     const employeeTest = new Employee("Jimmy", 2, testEmail);
     expect(employeeTest.getEmail()).toBe(testEmail);
 })
