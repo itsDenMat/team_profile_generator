@@ -3,9 +3,17 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 
+// Connect library
 const Manager = require("./lib/Manager.js");
 const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
+
+// Connect html template
+const generateTeam = require("./src/template.js");
+
+// Paths
+const generatedDIR = path.resolve(__dirname, "generated");
+const generatedPath = path.join(generatedDIR, "team.html");
 
 teamArray [];
 
@@ -153,7 +161,7 @@ function addIntern() {
 function htmlBuild () {
     console.log("Team successfully created!");
 
-    fs.writeFileSync(outputPath, generateTeam(teamArray), "utf-8");
+    fs.writeFileSync(generatedPath, generateTeam(teamArray), "utf-8");
 }
 
 createTeam();
