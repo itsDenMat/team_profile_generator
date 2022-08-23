@@ -41,14 +41,14 @@ const generateTeam = team => {
         return `
         <div class="card employee-card>
             <div class="card-header bg-primary text-white>
-                <h2 class="card-title>${engineer.getName()}</h2>
-                <h3 class="card-title><i class="fas fa-mug-hot mr-2"></i>${engineer.getRole()}</h3>
+                <h2 class="card-title>${intern.getName()}</h2>
+                <h3 class="card-title><i class="fas fa-mug-hot mr-2"></i>${intern.getRole()}</h3>
             </div>
             <div class="card-body">
                 <ul class="list-group">
-                    <li class="list-group-item">ID: ${engineer.getId()}</li>
-                    <li class="list-group-item">Email: ${engineer.getEmail()}</li>
-                    <li class="list-group-item">GitHub: ${manager.getGithub()}</li>
+                    <li class="list-group-item">ID: ${intern.getId()}</li>
+                    <li class="list-group-item">Email: ${intern.getEmail()}</li>
+                    <li class="list-group-item">School: ${intern.getSchool()}</li>
                 </ul>
             </div>
         </div>`;
