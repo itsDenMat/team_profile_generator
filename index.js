@@ -15,7 +15,7 @@ const generateTeam = require("./src/template.js");
 const generatedDIR = path.resolve(__dirname, "generated");
 const generatedPath = path.join(generatedDIR, "team.html");
 
-teamArray [];
+teamArray = [];
 
 //Function to run the app
 function startApp() {

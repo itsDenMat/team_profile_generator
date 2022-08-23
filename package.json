@@ -1,19 +1,26 @@
 {
-  "name": "team_profile_generator",
+  "name": "CoolEmployees",
   "version": "1.0.0",
-  "description": "Command line application that generates an HTML webpage to display summaries for each employees.",
+  "description": "OOP",
   "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "scripts": {
     "test": "jest --verbose test/*"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/itsDenMat/team_profile_generator.git"
+    "type": "",
+    "url": "git+https://github.com/JamesLJenks/10_OOP-Team-Profile-Generator.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/itsDenMat/team_profile_generator/issues"
+  "homepage": "https://github.com/JamesLJenks/10_OOP-Team-Profile-Generator",
+  "dependencies": {
+    "inquirer": "^6.3.1"
   },
-  "homepage": "https://github.com/itsDenMat/team_profile_generator#readme"
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
 }
