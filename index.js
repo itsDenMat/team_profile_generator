@@ -149,6 +149,7 @@ function addIntern() {
     });
 }
 
+// Function to start creating the HTML
 function htmlBuild () {
     console.log("Team successfully created!");
 
