@@ -4,10 +4,10 @@ This is a Node.js command-line application that takes in information about emplo
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Demo] (#demo)
-* [Testing] (#testing)
-* [License] (#license)
-* [Questions] (#questions?)
+* [DEMO](#demo)
+* [Testing](#testing)
+* [License](#license)
+* [Questions](#questions?)
 
 ## Installation
 In able to use the application and generate your own team profile generator, you will have to `git clone` the repository to your local storage. This will enable you to access all the files locally.
