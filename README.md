@@ -47,6 +47,14 @@ Enter `npm test` in the terminal to initiate test for the application. This proc
 
 <img src="./assets/team_generator_test.gif">
 
+## Video Demo Links
+[Answering Prompts](https://drive.google.com/file/d/1Pg533EtnFy9ZHeKMcxhXFWYoRtpp-wJB/view)
+
+[Display Generated HTML file](https://drive.google.com/file/d/1ZQtI2wZJACHbmh0-brk_5M47LvurKqqt/view)
+
+[Application Testing](https://drive.google.com/file/d/1QT-bF7NhxMtov3lZTk8C9wPnlAbX5dah/view)
+
+
 ## License
 ISC
 
