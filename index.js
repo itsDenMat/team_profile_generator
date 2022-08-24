@@ -80,6 +80,7 @@ function addManager() {
             message: "Enter manager's office number."
         }
     ])
+    // Pushes answers to empty array
     .then(answers => {
         const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
         teamArray.push(manager);
@@ -115,6 +116,7 @@ function addEngineer() {
             message: "Enter engineer's GitHub username."
         },
     ])
+    // Pushes answers to empty array
     .then(answers => {
         const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
         teamArray.push(engineer);
@@ -150,6 +152,7 @@ function addIntern() {
             message: "Enter the school attended by intern."
         },
     ])
+    // Pushes answers to empty array
     .then(answers => {
         const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
         teamArray.push(intern);
