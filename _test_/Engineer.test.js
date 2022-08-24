@@ -3,7 +3,7 @@ const Engineer = require("../lib/Engineer");
 
 // TEST FOR ENGINEER
 // Create GitHub check
-test("Can a GitHub link.", () =>{
+test("Can the app create a GitHub link.", () =>{
     const testGitHub = "JimmyGit";
     const employeeTest = new Engineer("Jimmy", 3, "jimmy@gmail.com", testGitHub);
     expect(employeeTest.github).toBe(testGitHub);
